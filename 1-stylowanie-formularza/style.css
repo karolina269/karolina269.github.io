@@ -1,0 +1,34 @@
+/* tło: #213b50
+pole nieaktywne: #2b4a64
+pole aktywne: #4e708c
+ramka aktywnego pola i kolor tekstu: #ffffff
+kolor przycisku wysyłania: #1ac056
+kolor przycisku wysyłania po najechaniu kursorem: #46e881 */
+form {
+    background-color: #213b50;
+    color: #ffffff;
+}
+input, select, textarea {
+    background-color: #2b4a64;
+    color: #ffffff;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #2b4a64;
+}
+label {
+    display: block;
+}
+label[type="radio"],
+label[type="checkbox"] {
+    width: auto;
+}
+input:focus {
+    background-color: #4e708c;
+    border-color: #ffffff;
+}
+input[type="submit"] {
+    background-color: #1ac056;
+}
+input[type="submit"]:hover {
+    background-color: #46e881;
+}
