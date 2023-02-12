@@ -38,25 +38,25 @@ footer {
     flex-wrap: wrap;
   }
   article {
-    width: 80%;
+    flex-basis: 80%;
   }
   .right {
-    width: 20%;
+    flex-basis: 20%;
   }
   .left {
     order: 1;
-    width: 100%;
+    flex-basis: 100%;
   }
 }
 @media screen and (min-width: 992px) {
   article {
-    width: 70%;
+    flex-basis: 70%;
   }
   .left {
     order: -1;
-    width: 15%;
+    flex-basis: 15%;
   }
   .right {
-    width: 15%;
+    flex-basis: 15%;
   }
 }
