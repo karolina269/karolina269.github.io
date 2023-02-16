@@ -1,0 +1,232 @@
+/*podstawowy czyli najmniejszy - < 480px*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+hr {
+  width: 70px;
+  border: 1px solid #007bff;
+  border-bottom: 0;
+}
+section {
+  padding: 120px 0;
+}
+.section-header {
+  margin-bottom: 75px;
+}
+.section-header h2 {
+  color: #333;
+  font-size: 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  border: 1px solid #007bff;
+  padding: 14px 20px;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+/*nagłowek*/
+.main-header {
+  height: 70vh;
+  background-color: #f2f1ed;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-header .main-header-content {
+  text-align: center;
+}
+.main-header .main-header-content h1 {
+  font-size: 3em;
+  color: #007bff;
+  text-transform: uppercase;
+  margin: 0;
+}
+.main-header .main-header-content p {
+  color: #333;
+  font-size: 1.3em;
+  margin: 40px 0;
+}
+.main-header .main-header-content p span {
+  color: #007bff;
+}
+
+/*menu*/
+.main-menu {
+  background-color: #007bff;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+.main-menu ul .menu-item {
+  display: inline-block; /*częsta praktyka, aby ustawiać marginesy elementom*/
+  margin: 0 10px;
+}
+.main-menu ul .menu-item a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block; /*aby paddingi zadziałały*/
+  transition: all 0.3s;
+}
+.main-menu ul .menu-item a:hover {
+  color: #007bff;
+  background-color: #fff;
+}
+
+/*o mnie*/
+.about {
+  text-align: center;
+}
+.about img {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+}
+.about p {
+  margin: 40px auto 30px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/*portfolio*/
+.portfolio {
+  background-color: #f2f1ed;
+}
+.portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-wrapper .portfolio-item {
+  flex-basis: 100%;
+  height: 200px;
+  position: relative;
+}
+.portfolio-wrapper .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*obcina krawędzie jeśli rozmiar nie pasuje*/
+}
+.portfolio-wrapper .portfolio-item h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.8);
+  margin: 0;
+  text-align: center;
+  line-height: 200px; /*środkowanie napisu w pionie*/
+  color: #fff;
+  font-weight: 300;
+  font-size: 3em;
+  opacity: 0;
+}
+.portfolio-wrapper .portfolio-item h3:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/*kontakt*/
+.contact form {
+  margin: 40px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact input {
+  flex-basis: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.contact textarea {
+  flex-basis: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  height: 100px;
+}
+.social-links {
+  margin-top: 75px;
+  text-align: center;
+}
+.social-links .social-link {
+  font-size: 2.5em;
+  color: #007bff;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: 0 20px;
+}
+.social-links .social-link:hover {
+  color: #777;
+}
+
+/*footer*/
+.main-footer {
+  background-color: #f2f1ed;
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .main-header .main-header-content h1 {
+    font-size: 4.2em;
+  }
+  .about img {
+    border-radius: 50%;
+    max-height: none;
+    max-width: none;
+  }
+  .about p {
+    max-width: 700px;
+  }
+  .contact input {
+    flex-basis: 48%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .portfolio-wrapper .portfolio-item {
+    flex-basis: 50%;
+  }
+  .contact form {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+  .portfolio-wrapper .portfolio-item {
+    flex-basis: 25%;
+  }
+}
