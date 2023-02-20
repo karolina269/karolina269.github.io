@@ -5,6 +5,7 @@ let agree2 = form.querySelector('[name="agree2"]');
 
 const validate = (event) => {
   let errors = document.querySelector(".errors");
+  errors.innerHTML = "";
   if (form.name.value.trim().length === 0) {
     let liError = document.createElement("li");
     liError.innerText = "Wpisz imię i nazwisko";
