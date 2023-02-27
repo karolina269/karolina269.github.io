@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#square {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+h2 {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
