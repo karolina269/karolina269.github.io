@@ -1,0 +1,15 @@
+.accordion-button,
+code {
+  color: darkorange;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after,
+.accordion-button.collapsed::after {
+  display: none;
+}
+.accordion-button:not(.collapsed) {
+  color: grey;
+  text-decoration: underline;
+}
