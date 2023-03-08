@@ -1,0 +1,40 @@
+section,
+footer {
+  padding: 60px 0;
+}
+.service-item {
+  margin-bottom: 50px;
+}
+.service-item:last-child {
+  margin-bottom: 0;
+}
+.showcase {
+  padding: 0;
+}
+.showcase-img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.showcase-text {
+  padding: 50px;
+}
+.team-item {
+  max-width: 200px;
+  margin-bottom: 50px;
+}
+.team-item-last {
+  margin-bottom: 0px;
+}
+.call-to-action {
+  background-image: url(img/slider-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .service-item,
+  .team-item {
+    margin-bottom: 0px;
+  }
+}
